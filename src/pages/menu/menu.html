@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content class="contentPage">
-  <ion-card>
+  <ion-card class="cardDesign">
     <ion-item class="cardDesign">
       <h2>El Caballero Carmelo</h2>
       <p>Abraham Valdelomar</p>
@@ -15,25 +15,104 @@
     </ion-item>
   </ion-card>
   <progress-bar [progress]="loadProgress"></progress-bar>
-  <ion-card>
-    <ion-item class="cardDesign">
-      <ion-icon item-start>
-        <img src="assets/imgs/book2.png">
-      </ion-icon>
-      <h2>Malditas Matemáticas</h2>
-      <p>Carlo Fabretti</p>
-    </ion-item>
+  <ion-card class="cardDesign">
+    <ion-row>
+      <ion-col padding>
+        <ion-row>CAPITULO 1</ion-row>
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/imgs/star.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star.png">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col padding>
+        <ion-row>CAPITULO 2</ion-row>
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/imgs/star2.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star2.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star2.png">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col padding>
+        <ion-row>CAPITULO 3</ion-row>
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/imgs/star.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star.png">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>CAPITULO 4</ion-row>
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/imgs/star2.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star2.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star2.png">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col padding>
+        <ion-row>CAPITULO 5</ion-row>
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/imgs/star.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star.png">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col padding>
+        <ion-row>CAPITULO 6</ion-row>
+        <ion-row>
+          <ion-col col-3>
+            <img src="assets/imgs/star2.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star2.png">
+          </ion-col>
+          <ion-col col-3>
+            <img src="assets/imgs/star2.png">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
   </ion-card>
-  <form padding class="form">
-    <ion-label>Acceda a su cuennta</ion-label>
-    <ion-item>
-      <ion-label fixed>Usuario : </ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label fixed>Pass : </ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <button ion-button full class="buton" type="submit" ion-button block><b>INGRESAR</b></button>
-  </form>
+  <ion-row>
+    <ion-col>
+      <button ion-button full class="button" type="submit" ion-button block><b>RESOLVER</b></button>
+    </ion-col>
+    <ion-col>
+      <button ion-button full class="button" type="submit" ion-button block><b>RETAR</b></button>
+    </ion-col>
+  </ion-row>
 </ion-content>

@@ -1,25 +1,9 @@
 page-home {
-  .cardDesign {
-    background-color: #C8E6C9;
-  }
-  .buton {
+  .button {
     background-color: #F4B000;
     color: black;
-  }
-  ion-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 90px 1px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
   }
   .form {
     background-color: #f4f4f4;
   }
-  .contentPage {
-    background-image: url('../../assets/imgs/background.png');
-    background-repeat: no-repeat;
-    background-size:cover;}
 }
