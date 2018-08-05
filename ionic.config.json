@@ -1,0 +1,7 @@
+{
+  "name": "reader_answer",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
