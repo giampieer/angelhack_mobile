@@ -1,17 +1,38 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-title>Home</ion-title>
+    <ion-title>AULA E-51</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <ion-card>
+    <ion-item class="cardDesign">
+      <h2>El Caballero Carmelo</h2>
+      <p>Abraham Valdelomar</p>
+      <ion-icon item-end>
+        <img src="assets/imgs/book1.png">
+      </ion-icon>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item class="cardDesign">
+      <ion-icon item-start>
+        <img src="assets/imgs/book2.png">
+      </ion-icon>
+      <h2>Malditas Matemáticas</h2>
+      <p>Carlo Fabretti</p>
+    </ion-item>
+  </ion-card>
+  <form padding>
+    <ion-label>Acceda a su cuennta</ion-label>
+    <ion-item>
+      <ion-label fixed>Usuario : </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Pass : </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <button ion-button full class="buton" type="submit" ion-button block><b>INGRESAR</b></button>
+  </form>
 </ion-content>
