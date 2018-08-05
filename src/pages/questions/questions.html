@@ -1,0 +1,28 @@
+<ion-header no-lines>
+  <ion-navbar color="primary">
+    <ion-title center >AULA E-51</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="contentPage">
+  <ion-label style="color: #ffffff;font-size: 20px" text-center>Responde a estas preguntas: </ion-label>
+  <div *ngFor="let message of messages; let i= index">
+  <ion-card class="cardDesign">
+    <ion-item>
+      <h2>{{message.pregunta}} {{i}}</h2>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{message.res1}}</ion-label>
+      <ion-checkbox  (ionChange)="updateCucumber()"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{message.res2}}</ion-label>
+      <ion-checkbox (ionChange)="updateCucumber()"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{message.res3}}</ion-label>
+      <ion-checkbox (ionChange)="updateCucumber()"></ion-checkbox>
+    </ion-item>
+  </ion-card>
+  </div>
+  <button ion-button full class="button" type="submit" ion-button block><b>INGRESAR</b></button>
+</ion-content>
