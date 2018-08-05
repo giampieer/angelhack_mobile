@@ -7,7 +7,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { MenuPage } from "../pages/menu/menu";
-import { QuestionsPage} from "../pages/questions/questions";
+import { QuestionsPage } from "../pages/questions/questions";
+import { WelcomePage } from "../pages/welcome/welcome";
 import {ProgressBarModule} from "angular-progress-bar"
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,8 @@ firebase.initializeApp(config);
     HomePage,
     TabsPage,
     MenuPage,
-    QuestionsPage
+    QuestionsPage,
+    WelcomePage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ firebase.initializeApp(config);
     HomePage,
     TabsPage,
     MenuPage,
-    QuestionsPage
+    QuestionsPage,
+    WelcomePage
   ],
   providers: [
     StatusBar,
