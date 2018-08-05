@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {EntryPage} from "../pages/entry/entry";
 import {HomePage} from "../pages/home/home";
+import {PromedioPage} from "../pages/promedio/promedio";
 
 @Component({
   templateUrl: 'app.html'
@@ -16,9 +17,9 @@ export class MyApp {
     this.initializeApp();
     statusBar.styleLightContent();// used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Mi Promedio por aula', component: HomePage },
-      { title: 'Aua disponibles', component: HomePage },
-      { title: 'Ranking', component: HomePage }
+      { title: 'Mi Promedio por aula', component: PromedioPage },
+      { title: 'Aua disponibles', component: EntryPage },
+      { title: 'Ranking', component: EntryPage }
     ];
   }
   initializeApp() {

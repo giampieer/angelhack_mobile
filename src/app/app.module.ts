@@ -15,6 +15,8 @@ import { Reto3Page } from "../pages/reto3/reto3";
 import { CongratulationsPage } from "../pages/congratulations/congratulations";
 import { FailedPage } from "../pages/failed/failed";
 import { EntryPage} from "../pages/entry/entry";
+import { AulaPage } from "../pages/aula/aula";
+import { PromedioPage } from "../pages/promedio/promedio";
 import {ProgressBarModule} from "angular-progress-bar"
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -44,7 +46,9 @@ firebase.initializeApp(config);
     Reto3Page,
     CongratulationsPage,
     FailedPage,
-    EntryPage
+    EntryPage,
+    AulaPage,
+    PromedioPage
   ],
   imports: [
     BrowserModule,
@@ -66,7 +70,9 @@ firebase.initializeApp(config);
     Reto3Page,
     CongratulationsPage,
     FailedPage,
-    EntryPage
+    EntryPage,
+    AulaPage,
+    PromedioPage
   ],
   providers: [
     StatusBar,
