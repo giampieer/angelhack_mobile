@@ -5,12 +5,13 @@
 </ion-header>
 
 <ion-content class="contentPage">
-  <ion-card class="cardDesign">
+  <div *ngFor="let message of messages">
+    <ion-card class="cardDesign">
     <ion-item class="cardDesign">
-      <h2>El Caballero Carmelo</h2>
-      <p>Abraham Valdelomar</p>
+      <h2>{{message.titulo}}</h2>
+      <p>{{message.autor}}</p>
       <ion-icon item-end>
-        <img src="assets/imgs/book1.png">
+        <img style="width: 80px;height: 100px" src='{{message.imagen}}'>
       </ion-icon>
     </ion-item>
   </ion-card>
@@ -115,22 +116,5 @@
       <button ion-button full class="button" type="submit" ion-button block><b>RETAR</b></button>
     </ion-col>
   </ion-row>
-  <ion-list>
-    <ion-item-sliding *ngFor="let message of messages">
-      <ion-item>
-        <h3>title: {{message.autor}}</h3>
-        <p>body: {{message.autor}}</p>
-      </ion-item>
-      <ion-item-options>
-        <button ion-button color="danger" (click)="deleteMessage(message.$key)">
-          <ion-icon name="ios-trash"></ion-icon>
-          delete
-        </button>
-        <button ion-button color="success" (click)="updateMessage(message)">
-          <ion-icon name="ios-create"></ion-icon>
-          edit
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
+  </div>
 </ion-content>

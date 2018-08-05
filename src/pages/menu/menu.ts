@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 import * as firebase from "firebase";
 @IonicPage()
 @Component({
@@ -10,7 +10,7 @@ export class MenuPage {
   loadProgress: number = 0;
   private db: any;
   messages: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor() {
     this.db = firebase.firestore();
     this.loadData();
   }
