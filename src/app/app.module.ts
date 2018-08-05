@@ -10,6 +10,9 @@ import { MenuPage } from "../pages/menu/menu";
 import { QuestionsPage } from "../pages/questions/questions";
 import { WelcomePage } from "../pages/welcome/welcome";
 import { ParticipantsPage } from "../pages/participants/participants";
+import { Reto1Page } from "../pages/reto1/reto1";
+import { Reto2Page } from "../pages/reto2/reto2";
+import { Reto3Page } from "../pages/reto3/reto3";
 import {ProgressBarModule} from "angular-progress-bar"
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,7 +37,10 @@ firebase.initializeApp(config);
     MenuPage,
     QuestionsPage,
     WelcomePage,
-    ParticipantsPage
+    ParticipantsPage,
+    Reto1Page,
+    Reto2Page,
+    Reto3Page
   ],
   imports: [
     BrowserModule,
@@ -51,7 +57,10 @@ firebase.initializeApp(config);
     MenuPage,
     QuestionsPage,
     WelcomePage,
-    ParticipantsPage
+    ParticipantsPage,
+    Reto1Page,
+    Reto2Page,
+    Reto3Page
   ],
   providers: [
     StatusBar,
