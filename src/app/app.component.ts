@@ -17,8 +17,9 @@ export class MyApp {
     this.initializeApp();
     statusBar.styleLightContent();// used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Inicio', component: EntryPage },
       { title: 'Mi Promedio por aula', component: PromedioPage },
-      { title: 'Aua disponibles', component: AulaPage },
+      { title: 'Aulas disponibles', component: AulaPage },
       { title: 'Ranking', component: EntryPage }
     ];
   }

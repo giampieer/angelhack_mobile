@@ -1,17 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 import * as firebase from "firebase";
-import {ParticipantsPage} from "../participants/participants";
-import {WelcomePage} from "../welcome/welcome";
 import {MenuPage} from "../menu/menu";
-
-/**
- * Generated class for the QuestionsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-questions',
@@ -25,7 +15,6 @@ export class QuestionsPage {
     this.db = firebase.firestore();
     this.loadData();
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuestionsPage');
   }
