@@ -115,4 +115,22 @@
       <button ion-button full class="button" type="submit" ion-button block><b>RETAR</b></button>
     </ion-col>
   </ion-row>
+  <ion-list>
+    <ion-item-sliding *ngFor="let message of messages">
+      <ion-item>
+        <h3>title: {{message.autor}}</h3>
+        <p>body: {{message.autor}}</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="danger" (click)="deleteMessage(message.$key)">
+          <ion-icon name="ios-trash"></ion-icon>
+          delete
+        </button>
+        <button ion-button color="success" (click)="updateMessage(message)">
+          <ion-icon name="ios-create"></ion-icon>
+          edit
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
