@@ -1,0 +1,39 @@
+<ion-header no-lines>
+  <ion-navbar color="primary">
+    <ion-title center >AULA E-51</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="contentPage">
+  <ion-card>
+    <ion-item class="cardDesign">
+      <h2>El Caballero Carmelo</h2>
+      <p>Abraham Valdelomar</p>
+      <ion-icon item-end>
+        <img src="assets/imgs/book1.png">
+      </ion-icon>
+    </ion-item>
+  </ion-card>
+  <progress-bar [progress]="loadProgress"></progress-bar>
+  <ion-card>
+    <ion-item class="cardDesign">
+      <ion-icon item-start>
+        <img src="assets/imgs/book2.png">
+      </ion-icon>
+      <h2>Malditas Matemáticas</h2>
+      <p>Carlo Fabretti</p>
+    </ion-item>
+  </ion-card>
+  <form padding class="form">
+    <ion-label>Acceda a su cuennta</ion-label>
+    <ion-item>
+      <ion-label fixed>Usuario : </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Pass : </ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <button ion-button full class="buton" type="submit" ion-button block><b>INGRESAR</b></button>
+  </form>
+</ion-content>

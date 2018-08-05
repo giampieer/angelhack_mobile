@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
+import {MenuPage} from "../menu/menu";
 
 @Component({
   templateUrl: 'tabs.html'
@@ -10,7 +11,7 @@ import { HomePage } from '../home/home';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = AboutPage;
+  tab2Root = MenuPage;
   tab3Root = ContactPage;
 
   constructor() {
