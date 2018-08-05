@@ -1,14 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ParticipantsPage} from "../participants/participants";
 import {MenuPage} from "../menu/menu";
-
-/**
- * Generated class for the FailedPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -16,7 +8,6 @@ import {MenuPage} from "../menu/menu";
   templateUrl: 'failed.html',
 })
 export class FailedPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   ionViewDidLoad() {
@@ -36,5 +27,4 @@ export class FailedPage {
   nextPage(){
     this.navCtrl.push(MenuPage);
   }
-
 }

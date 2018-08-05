@@ -1,22 +1,12 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ParticipantsPage} from "../participants/participants";
 import {MenuPage} from "../menu/menu";
-
-/**
- * Generated class for the CongratulationsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-congratulations',
   templateUrl: 'congratulations.html',
 })
 export class CongratulationsPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   ionViewDidLoad() {
@@ -36,6 +26,4 @@ export class CongratulationsPage {
   nextPage(){
     this.navCtrl.push(MenuPage);
   }
-
-
 }

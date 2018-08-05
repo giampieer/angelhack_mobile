@@ -1,14 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {CongratulationsPage} from "../congratulations/congratulations";
 import {FailedPage} from "../failed/failed";
-
-/**
- * Generated class for the Reto3Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -16,15 +8,12 @@ import {FailedPage} from "../failed/failed";
   templateUrl: 'reto3.html',
 })
 export class Reto3Page {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad Reto3Page');
   }
   nextPage(){
     this.navCtrl.push(FailedPage);
   }
-
 }
