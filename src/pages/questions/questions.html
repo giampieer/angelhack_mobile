@@ -7,9 +7,7 @@
   <ion-label style="color: #ffffff;font-size: 20px" text-center>Responde a estas preguntas: </ion-label>
   <div *ngFor="let message of messages; let i= index">
   <ion-card class="cardDesign">
-    <ion-item>
-      <h2>{{message.pregunta}} {{i}}</h2>
-    </ion-item>
+    <p padding>{{message.pregunta}} {{i}}</p>
     <ion-item>
       <ion-label>{{message.res1}}</ion-label>
       <ion-checkbox  (ionChange)="updateCucumber()"></ion-checkbox>
@@ -24,5 +22,5 @@
     </ion-item>
   </ion-card>
   </div>
-  <button ion-button full class="button" type="submit" ion-button block><b>INGRESAR</b></button>
+  <button  ion-button full class="button" type="submit" ion-button block><b>INGRESAR</b></button>
 </ion-content>
