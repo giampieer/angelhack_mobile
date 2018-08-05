@@ -1,3 +1,17 @@
 page-reto1 {
-
+  .image {
+    height: 10vw;
+    width: 10vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px gray;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CDDC39;
+  }
+  .button {
+    background-color: #F4B000;
+    color: black;
+  }
 }
