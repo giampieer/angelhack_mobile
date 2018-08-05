@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {WelcomePage} from "../welcome/welcome";
+import {CongratulationsPage} from "../congratulations/congratulations";
 
 /**
  * Generated class for the Reto1Page page.
@@ -20,6 +22,9 @@ export class Reto1Page {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Reto1Page');
+  }
+  nextPage(){
+    this.navCtrl.push(CongratulationsPage);
   }
 
 }

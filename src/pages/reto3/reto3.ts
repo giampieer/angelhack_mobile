@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {CongratulationsPage} from "../congratulations/congratulations";
+import {FailedPage} from "../failed/failed";
 
 /**
  * Generated class for the Reto3Page page.
@@ -20,6 +22,9 @@ export class Reto3Page {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Reto3Page');
+  }
+  nextPage(){
+    this.navCtrl.push(FailedPage);
   }
 
 }

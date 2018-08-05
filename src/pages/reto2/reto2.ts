@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {CongratulationsPage} from "../congratulations/congratulations";
 
 /**
  * Generated class for the Reto2Page page.
@@ -20,6 +21,9 @@ export class Reto2Page {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Reto2Page');
+  }
+  nextPage(){
+    this.navCtrl.push(CongratulationsPage);
   }
 
 }
