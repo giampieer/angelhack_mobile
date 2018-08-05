@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {MenuPage} from "../menu/menu";
 
 @Component({
   selector: 'page-home',
@@ -21,6 +22,9 @@ export class HomePage {
 
     }, 50);
 
+  }
+  nextPage(){
+    this.navCtrl.push(MenuPage);
   }
 
 }

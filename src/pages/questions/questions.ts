@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import * as firebase from "firebase";
 import {ParticipantsPage} from "../participants/participants";
 import {WelcomePage} from "../welcome/welcome";
+import {MenuPage} from "../menu/menu";
 
 /**
  * Generated class for the QuestionsPage page.
@@ -63,7 +64,7 @@ export class QuestionsPage {
     });
   }
   nextPage(){
-    this.navCtrl.push(WelcomePage);
+    this.navCtrl.push(MenuPage);
   }
 
 }

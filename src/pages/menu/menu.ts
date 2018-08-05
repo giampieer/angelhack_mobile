@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
+import {IonicPage, NavController} from 'ionic-angular';
 import * as firebase from "firebase";
+import {QuestionsPage} from "../questions/questions";
+import {WelcomePage} from "../welcome/welcome";
 @IonicPage()
 @Component({
   selector: 'page-menu',
@@ -10,7 +12,7 @@ export class MenuPage {
   loadProgress: number = 0;
   private db: any;
   messages: any;
-  constructor() {
+  constructor(public navCtrl: NavController) {
     this.db = firebase.firestore();
     this.loadData();
   }
@@ -50,5 +52,11 @@ export class MenuPage {
           reject(error);
         });
     });
+  }
+  nextPage1(){
+    this.navCtrl.push(QuestionsPage);
+  }
+  nextPage2(){
+    this.navCtrl.push(WelcomePage);
   }
 }

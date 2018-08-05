@@ -25,13 +25,13 @@ export class ParticipantsPage {
     console.log('ionViewDidLoad ParticipantsPage');
   }
   nextPage1(){
-    this.navCtrl.push(Reto1Page);
-  }
-  nextPage2(){
     this.navCtrl.push(Reto2Page);
   }
-  nextPage3(){
+  nextPage2(){
     this.navCtrl.push(Reto3Page);
+  }
+  nextPage3(){
+    this.navCtrl.push(Reto1Page);
   }
 
 }
