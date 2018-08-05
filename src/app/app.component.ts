@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {EntryPage} from "../pages/entry/entry";
 import {HomePage} from "../pages/home/home";
 import {PromedioPage} from "../pages/promedio/promedio";
+import {AulaPage} from "../pages/aula/aula";
 
 @Component({
   templateUrl: 'app.html'
@@ -18,7 +19,7 @@ export class MyApp {
     statusBar.styleLightContent();// used for an example of ngFor and navigation
     this.pages = [
       { title: 'Mi Promedio por aula', component: PromedioPage },
-      { title: 'Aua disponibles', component: EntryPage },
+      { title: 'Aua disponibles', component: AulaPage },
       { title: 'Ranking', component: EntryPage }
     ];
   }
