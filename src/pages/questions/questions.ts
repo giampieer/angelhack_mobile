@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import * as firebase from "firebase";
+import {ParticipantsPage} from "../participants/participants";
+import {WelcomePage} from "../welcome/welcome";
 
 /**
  * Generated class for the QuestionsPage page.
@@ -18,7 +20,7 @@ export class QuestionsPage {
   cucumber: boolean;
   private db: any;
   messages: any;
-  constructor() {
+  constructor(public navCtrl: NavController) {
     this.db = firebase.firestore();
     this.loadData();
   }
@@ -59,6 +61,9 @@ export class QuestionsPage {
           reject(error);
         });
     });
+  }
+  nextPage(){
+    this.navCtrl.push(WelcomePage);
   }
 
 }
