@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {CongratulationsPage} from "../congratulations/congratulations";
-@IonicPage()
 @Component({
   selector: 'page-reto2',
   templateUrl: 'reto2.html',

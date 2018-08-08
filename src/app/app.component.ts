@@ -15,6 +15,7 @@ export class MyApp {
   pages: Array<{title: string, component: any}>;
   constructor(public platform: Platform,public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
+    statusBar.backgroundColorByHexString("#212121");
     statusBar.styleLightContent();// used for an example of ngFor and navigation
     this.pages = [
       { title: 'Inicio', component: EntryPage },

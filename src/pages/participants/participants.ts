@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Reto1Page} from "../reto1/reto1";
 import {Reto2Page} from "../reto2/reto2";
 import {Reto3Page} from "../reto3/reto3";
-@IonicPage()
 @Component({
   selector: 'page-participants',
   templateUrl: 'participants.html',

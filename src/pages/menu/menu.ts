@@ -3,7 +3,6 @@ import {IonicPage, NavController} from 'ionic-angular';
 import * as firebase from "firebase";
 import {QuestionsPage} from "../questions/questions";
 import {WelcomePage} from "../welcome/welcome";
-@IonicPage()
 @Component({
   selector: 'page-menu',
   templateUrl: 'menu.html',

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import * as firebase from "firebase";
 import {MenuPage} from "../menu/menu";
-@IonicPage()
 @Component({
   selector: 'page-questions',
   templateUrl: 'questions.html',
