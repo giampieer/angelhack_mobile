@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {AlertController, NavController} from 'ionic-angular';
 import {MenuPage} from "../menu/menu";
+import {DetailbookPage} from "../detailbook/detailbook";
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -34,7 +35,7 @@ export class HomePage {
         {
           text: 'Ir a responder',
           handler: () => {
-            console.log('Ir a responder');
+            this.navCtrl.push(DetailbookPage);
           }
         }
       ]

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import * as firebase from "firebase";
 import {MenuPage} from "../menu/menu";
+import {CongratulationsPage} from "../congratulations/congratulations";
 @Component({
   selector: 'page-questions',
   templateUrl: 'questions.html',
@@ -52,7 +53,7 @@ export class QuestionsPage {
     });
   }
   nextPage(){
-    this.navCtrl.push(MenuPage);
+    this.navCtrl.push(CongratulationsPage);
   }
 
 }

@@ -1,27 +1,28 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {QuestionsbookPage} from "../questionsbook/questionsbook";
+import {QuestionsPage} from "../questions/questions";
 
 /**
- * Generated class for the DetailbookPage page.
+ * Generated class for the QuestionsbookPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
+
 @Component({
-  selector: 'page-detailbook',
-  templateUrl: 'detailbook.html',
+  selector: 'page-questionsbook',
+  templateUrl: 'questionsbook.html',
 })
-export class DetailbookPage {
+export class QuestionsbookPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DetailbookPage');
+    console.log('ionViewDidLoad QuestionsbookPage');
   }
   nextPage(){
-    this.navCtrl.push(QuestionsbookPage);
+    this.navCtrl.push(QuestionsPage);
   }
 
 }
