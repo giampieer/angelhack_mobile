@@ -14,6 +14,7 @@ import { CongratulationsPage } from "../pages/congratulations/congratulations";
 import { FailedPage } from "../pages/failed/failed";
 import { EntryPage} from "../pages/entry/entry";
 import { AulaPage } from "../pages/aula/aula";
+import { DetailbookPage} from "../pages/detailbook/detailbook";
 import { PromedioPage } from "../pages/promedio/promedio";
 import {ProgressBarModule} from "angular-progress-bar"
 import { StatusBar } from '@ionic-native/status-bar';
@@ -44,7 +45,8 @@ firebase.initializeApp(config);
     FailedPage,
     EntryPage,
     AulaPage,
-    PromedioPage
+    PromedioPage,
+    DetailbookPage
   ],
   imports: [
     BrowserModule,
@@ -66,7 +68,8 @@ firebase.initializeApp(config);
     FailedPage,
     EntryPage,
     AulaPage,
-    PromedioPage
+    PromedioPage,
+    DetailbookPage
   ],
   providers: [
     StatusBar,

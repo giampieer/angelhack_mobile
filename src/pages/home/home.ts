@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {AlertController, NavController} from 'ionic-angular';
 import {MenuPage} from "../menu/menu";
 @Component({
   selector: 'page-home',
@@ -7,7 +7,7 @@ import {MenuPage} from "../menu/menu";
 })
 export class HomePage {
   loadProgress: number = 0;
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private alertCtrl: AlertController) {
   }
   ionViewDidLoad(){
     setInterval(() => {
@@ -18,5 +18,27 @@ export class HomePage {
   }
   nextPage(){
     this.navCtrl.push(MenuPage);
+  }
+  Alerta() {
+    let alert = this.alertCtrl.create({
+      title: 'Fuente Ovejuna',
+      message: 'Fuente Ovejuna es un pequeño pueblo labrador, que está bajo el dominio de Fernán Gómez, Comendador Mayor de la orden de Calatrava, un hombre cruel y sin escrúpulos que trata mal y explota a sus vasallos. Entre la gente del pueblo se encuentra Laurencia, quien quiere casarse con Frondoso, un joven de la localidad.',
+      buttons: [
+        {
+          text: 'Leer en línea',
+          role: 'cancel',
+          handler: () => {
+            console.log('Leer en línea');
+          }
+        },
+        {
+          text: 'Ir a responder',
+          handler: () => {
+            console.log('Ir a responder');
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 }
