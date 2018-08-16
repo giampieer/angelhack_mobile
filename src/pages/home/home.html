@@ -1,37 +1,40 @@
-<ion-header no-lines>
-  <ion-navbar color="primary">
-    <ion-title center >AULA E-51</ion-title>
+<ion-header no-border>
+  <ion-navbar color="cgreen">
+    <ion-title  center >Disponibles en sala ...</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content class="contentPage">
+<ion-content class="contentPageV">
   <ion-card class="cardDesign">
     <ion-item>
-      <h2>El Caballero Carmelo</h2>
-      <p>Abraham Valdelomar</p>
-      <ion-icon item-end>
-        <img src="assets/imgs/book1.png">
-      </ion-icon>
+      <h2 text-center>Tradiciones Peruanas (III)</h2>
     </ion-item>
   </ion-card>
   <ion-card class="cardDesign">
     <ion-item>
-      <ion-icon item-start>
-        <img src="assets/imgs/book2.png">
-      </ion-icon>
-      <h2>Malditas Matemáticas</h2>
-      <p>Carlo Fabretti</p>
+      <h2 text-center>La noche de la Manzion Castilla</h2>
     </ion-item>
   </ion-card>
-  <form padding class="form">
-    <ion-label>Acceda a su cuennta</ion-label>
-    <ion-item>
-      <ion-label fixed>Usuario : </ion-label>
-      <ion-input type="text"></ion-input>
+  <ion-card class="cardDesign">
+    <ion-item style="background-color: #41B9A3">
+      <h2 text-center>Fuente Ovejuna</h2>
     </ion-item>
+  </ion-card>
+  <ion-card class="cardDesign">
     <ion-item>
-      <ion-label fixed>Pass : </ion-label>
-      <ion-input type="text"></ion-input>
+      <h2 text-center>Leyendas (I)</h2>
     </ion-item>
-    <button ion-button full class="button" (click)="nextPage()" type="submit" ion-button block><b>INGRESAR</b></button>
-  </form>
+  </ion-card>
+  <ion-card class="cardDesign">
+    <ion-item>
+      <h2 text-center>Los viajes de Guliber</h2>
+    </ion-item>
+  </ion-card>
+  <div padding style="background-color: #41B9A3 ; position: absolute;
+    bottom:auto;">
+    <p style="color: #f4f4f4">TIP :</p>
+    <p style="color: #f4f4f4">Los subrayados siempre te ayudan para señalar las ideas principales.</p>
+  </div>
+  <button  class="button" (click)="nextPage()" type="submit" ion-button block>
+    <ion-icon style="color: #f4f4f4" ios="ios-home" md="md-home"></ion-icon>
+  </button>
 </ion-content>
