@@ -16,6 +16,8 @@ import { EntryPage} from "../pages/entry/entry";
 import { AulaPage } from "../pages/aula/aula";
 import { DetailbookPage} from "../pages/detailbook/detailbook";
 import { PromedioPage } from "../pages/promedio/promedio";
+import { SplashPage} from "../pages/splash/splash";
+import { GradePage} from "../pages/grade/grade";
 import {QuestionsbookPage} from "../pages/questionsbook/questionsbook";
 import {ProgressBarModule} from "angular-progress-bar"
 import { StatusBar } from '@ionic-native/status-bar';
@@ -48,7 +50,9 @@ firebase.initializeApp(config);
     AulaPage,
     PromedioPage,
     DetailbookPage,
-    QuestionsbookPage
+    QuestionsbookPage,
+    SplashPage,
+    GradePage
 
   ],
   imports: [
@@ -73,7 +77,9 @@ firebase.initializeApp(config);
     AulaPage,
     PromedioPage,
     DetailbookPage,
-    QuestionsbookPage
+    QuestionsbookPage,
+    SplashPage,
+    GradePage
   ],
   providers: [
     StatusBar,
