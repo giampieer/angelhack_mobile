@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {EntryPage} from "../entry/entry";
 
 /**
  * Generated class for the GradePage page.
@@ -21,5 +22,7 @@ export class GradePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad GradePage');
   }
-
+  nextPage(){
+    this.navCtrl.push(EntryPage);
+  }
 }

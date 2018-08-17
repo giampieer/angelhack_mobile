@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {EntryPage} from "../entry/entry";
+import {GradePage} from "../grade/grade";
 
 /**
  * Generated class for the SplashPage page.
@@ -23,7 +24,7 @@ export class SplashPage {
     console.log('ionViewDidLoad SplashPage');
   }
   nextPage(){
-    this.navCtrl.push(EntryPage);
+    this.navCtrl.push(GradePage);
   }
 
 }

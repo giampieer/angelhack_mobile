@@ -19,10 +19,9 @@ export class MyApp {
     statusBar.backgroundColorByHexString("#212121");
     statusBar.styleLightContent();// used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Inicio', component: EntryPage },
-      { title: 'Mi Promedio por aula', component: PromedioPage },
-      { title: 'Aulas disponibles', component: AulaPage },
-      { title: 'Ranking', component: EntryPage }
+      { title: 'Planes Lectores', component: SplashPage },
+      { title: 'Ranking', component: SplashPage },
+      { title: 'Desempeño', component: SplashPage }
     ];
   }
   initializeApp() {
