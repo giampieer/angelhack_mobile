@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {QuestionsPage} from "../questions/questions";
+import {SplashPage} from "../splash/splash";
 
 /**
  * Generated class for the QuestionsbookPage page.
@@ -24,5 +25,7 @@ export class QuestionsbookPage {
   nextPage(){
     this.navCtrl.push(QuestionsPage);
   }
-
+  nextPage2(){
+    this.navCtrl.push(SplashPage);
+  }
 }

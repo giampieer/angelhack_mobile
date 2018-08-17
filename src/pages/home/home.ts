@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {AlertController, NavController} from 'ionic-angular';
 import {MenuPage} from "../menu/menu";
 import {DetailbookPage} from "../detailbook/detailbook";
+import {SplashPage} from "../splash/splash";
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -18,7 +19,7 @@ export class HomePage {
     }, 50);
   }
   nextPage(){
-    this.navCtrl.push(MenuPage);
+    this.navCtrl.push(SplashPage);
   }
   Alerta() {
     let alert = this.alertCtrl.create({

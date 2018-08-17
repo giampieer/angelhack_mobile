@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {MenuPage} from "../menu/menu";
+import {SplashPage} from "../splash/splash";
 @Component({
   selector: 'page-congratulations',
   templateUrl: 'congratulations.html',
@@ -16,7 +17,7 @@ export class CongratulationsPage {
     let timeOutHandler = setTimeout(
       () => {
         const e = Date.now() - start;
-        this.navCtrl.push(MenuPage);
+        this.navCtrl.push(SplashPage);
         console.log('Timer End', e);
       },
       time
