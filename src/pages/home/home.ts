@@ -3,7 +3,6 @@ import {AlertController, NavController} from 'ionic-angular';
 import {MenuPage} from "../menu/menu";
 import {DetailbookPage} from "../detailbook/detailbook";
 import {SplashPage} from "../splash/splash";
-import {ViewpdfPage} from "../viewpdf/viewpdf";
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -32,7 +31,6 @@ export class HomePage {
           role: 'cancel',
           handler: () => {
             console.log('Leer en línea');
-            this.navCtrl.push(ViewpdfPage);
           }
         },
         {
