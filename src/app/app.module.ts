@@ -12,16 +12,20 @@ import { Reto2Page } from "../pages/reto2/reto2";
 import { Reto3Page } from "../pages/reto3/reto3";
 import { CongratulationsPage } from "../pages/congratulations/congratulations";
 import { FailedPage } from "../pages/failed/failed";
-import { EntryPage} from "../pages/entry/entry";
+import { EntryPage } from "../pages/entry/entry";
 import { AulaPage } from "../pages/aula/aula";
-import { DetailbookPage} from "../pages/detailbook/detailbook";
+import { DetailbookPage } from "../pages/detailbook/detailbook";
 import { PromedioPage } from "../pages/promedio/promedio";
-import { SplashPage} from "../pages/splash/splash";
-import { GradePage} from "../pages/grade/grade";
-import {QuestionsbookPage} from "../pages/questionsbook/questionsbook";
-import {ProgressBarModule} from "angular-progress-bar"
+import { SplashPage } from "../pages/splash/splash";
+import { GradePage } from "../pages/grade/grade";
+import { ViewpdfPage} from "../pages/viewpdf/viewpdf";
+import { QuestionsbookPage } from "../pages/questionsbook/questionsbook";
+import { ProgressBarModule } from "angular-progress-bar"
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { File } from '@ionic-native/file';
+import { FileTransfer } from '@ionic-native/file-transfer';
+import { DocumentViewer } from '@ionic-native/document-viewer';
 import * as firebase from 'firebase';
 
 const config = {
@@ -52,8 +56,8 @@ firebase.initializeApp(config);
     DetailbookPage,
     QuestionsbookPage,
     SplashPage,
-    GradePage
-
+    GradePage,
+    ViewpdfPage
   ],
   imports: [
     BrowserModule,
@@ -79,12 +83,16 @@ firebase.initializeApp(config);
     DetailbookPage,
     QuestionsbookPage,
     SplashPage,
-    GradePage
+    GradePage,
+    ViewpdfPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    File,
+    DocumentViewer,
+    FileTransfer
   ]
 })
 export class AppModule {}

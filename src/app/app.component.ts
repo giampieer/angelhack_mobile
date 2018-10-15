@@ -2,9 +2,6 @@ import {Component, ViewChild} from '@angular/core';
 import {Nav, Platform} from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {EntryPage} from "../pages/entry/entry";
-import {PromedioPage} from "../pages/promedio/promedio";
-import {AulaPage} from "../pages/aula/aula";
 import {SplashPage} from "../pages/splash/splash";
 
 @Component({
@@ -16,8 +13,8 @@ export class MyApp {
   pages: Array<{title: string, component: any}>;
   constructor(public platform: Platform,public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
+    this.statusBar.overlaysWebView(true);
     statusBar.backgroundColorByHexString("#212121");
-    statusBar.styleLightContent();// used for an example of ngFor and navigation
     this.pages = [
       { title: 'Planes Lectores', component: SplashPage },
       { title: 'Ranking', component: SplashPage },
