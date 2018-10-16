@@ -23,8 +23,8 @@ export class HomePage {
   }
   Alerta() {
     let alert = this.alertCtrl.create({
-      title: 'Fuente Ovejuna',
-      message: 'Fuente Ovejuna es un pequeño pueblo labrador, que está bajo el dominio de Fernán Gómez, Comendador Mayor de la orden de Calatrava, un hombre cruel y sin escrúpulos que trata mal y explota a sus vasallos. Entre la gente del pueblo se encuentra Laurencia, quien quiere casarse con Frondoso, un joven de la localidad.',
+      title: 'Paco Yunque',
+      message: 'Paco Yunque es el título de un cuento o relato corto de tipo infantil, del escritor peruano César Vallejo. Es el más conocido y antologado cuento de dicho autor. Es también el nombre del protagonista infantil del relato, convertido en una de las figuras emblemáticas de la literatura peruana.',
       buttons: [
         {
           text: 'Leer en línea',
