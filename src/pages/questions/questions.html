@@ -10,15 +10,15 @@
     <p style="; color: #f4f4f4;" padding>{{message.pregunta}} {{i}}</p>
     <ion-item style="background-color: #1ABCFE; color: #f4f4f4;">
       <ion-label>{{message.res1}}</ion-label>
-      <ion-checkbox  (ionChange)="updateCucumber()"></ion-checkbox>
+      <ion-checkbox  (ionChange)="updatePoint(message.res1)"></ion-checkbox>
     </ion-item>
     <ion-item style="background-color: #1ABCFE; color: #f4f4f4;">
       <ion-label>{{message.res2}}</ion-label>
-      <ion-checkbox (ionChange)="updateCucumber()"></ion-checkbox>
+      <ion-checkbox (ionChange)="updatePoint(message.res1)"></ion-checkbox>
     </ion-item>
     <ion-item style="background-color: #1ABCFE; color: #f4f4f4;">
       <ion-label>{{message.res3}}</ion-label>
-      <ion-checkbox (ionChange)="updateCucumber()"></ion-checkbox>
+      <ion-checkbox (ionChange)="updatePoint(message.res1)"></ion-checkbox>
     </ion-item>
   </ion-card>
   </div>

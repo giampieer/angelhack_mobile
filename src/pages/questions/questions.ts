@@ -18,8 +18,8 @@ export class QuestionsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuestionsPage');
   }
-  updateCucumber() {
-    console.log('Cucumbers new state:' + this.cucumber);
+  updatePoint(point) {
+    console.log('Cucumbers new state:' + point);
   }
   loadData(){
     this.getAllDocuments("preguntas").then((e)=>{
